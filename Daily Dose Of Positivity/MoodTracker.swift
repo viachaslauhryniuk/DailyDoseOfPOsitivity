@@ -8,9 +8,52 @@
 import SwiftUI
 
 struct MoodTracker: View {
+    @State private var showBlock = false
+    @EnvironmentObject var ratings: Ratings
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+    
+        VStack{
+            ForEach(ratings.ratings, id: \.self){ rating in
+                Text(String(rating))
+            }
+            
+        }
+        .onAppear {
+            checkDailyAccess()
+            
+        }
+        .sheet(isPresented: $showBlock) {
+            EmojiRatingView()
+                .environmentObject(ratings)
+                .presentationDetents([.fraction(0.15)])
+            
+        }
+        
     }
+    
+    
+    
+    
+    
+    func checkDailyAccess() {
+        
+        let lastAccessDate = UserDefaults.standard.object(forKey: "LastAccessDate") as? Date
+        
+        if let lastAccessDate = lastAccessDate {
+            if !Calendar.current.isDateInToday(lastAccessDate) {
+                showBlock = true
+                UserDefaults.standard.set(Date(), forKey: "LastAccessDate")
+                
+            }
+        } else {
+            showBlock = true
+            
+            UserDefaults.standard.set(Date(), forKey: "LastAccessDate")
+            
+        }
+    }
+    
 }
 
 struct MoodTracker_Previews: PreviewProvider {

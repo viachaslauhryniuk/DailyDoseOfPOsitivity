@@ -20,6 +20,8 @@
 		569434592B017DF30074E16A /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 569434582B017DF30074E16A /* Data.json */; };
 		5694345B2B0392A00074E16A /* ActsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694345A2B0392A00074E16A /* ActsStruct.swift */; };
 		5694345D2B03939F0074E16A /* Acts.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694345C2B03939F0074E16A /* Acts.json */; };
+		5694345F2B03EB310074E16A /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694345E2B03EB310074E16A /* EmojiRatingView.swift */; };
+		569434612B041A400074E16A /* RatingClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569434602B041A400074E16A /* RatingClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		569434582B017DF30074E16A /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 		5694345A2B0392A00074E16A /* ActsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActsStruct.swift; sourceTree = "<group>"; };
 		5694345C2B03939F0074E16A /* Acts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Acts.json; sourceTree = "<group>"; };
+		5694345E2B03EB310074E16A /* EmojiRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
+		569434602B041A400074E16A /* RatingClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +78,9 @@
 				5694344C2B0169440074E16A /* GratitudeJournalView.swift */,
 				569434522B016AE00074E16A /* MyProfileView.swift */,
 				569434502B016ABD0074E16A /* MoodTracker.swift */,
+				569434602B041A400074E16A /* RatingClass.swift */,
 				5694344E2B016A170074E16A /* RandomActsGenerator.swift */,
+				5694345E2B03EB310074E16A /* EmojiRatingView.swift */,
 				5694344A2B0169080074E16A /* DailyQuoteView.swift */,
 				5694345A2B0392A00074E16A /* ActsStruct.swift */,
 				569434542B01772E0074E16A /* DailyQuotes.swift */,
@@ -166,10 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5694345F2B03EB310074E16A /* EmojiRatingView.swift in Sources */,
 				569434552B01772E0074E16A /* DailyQuotes.swift in Sources */,
 				5694344D2B0169440074E16A /* GratitudeJournalView.swift in Sources */,
 				569434512B016ABD0074E16A /* MoodTracker.swift in Sources */,
 				5694343F2B0161000074E16A /* ContentView.swift in Sources */,
+				569434612B041A400074E16A /* RatingClass.swift in Sources */,
 				5694344B2B0169080074E16A /* DailyQuoteView.swift in Sources */,
 				569434532B016AE00074E16A /* MyProfileView.swift in Sources */,
 				5694343D2B0161000074E16A /* Daily_Dose_Of_PositivityApp.swift in Sources */,

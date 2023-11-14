@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var ratings = Ratings()
+    
     var body: some View {
-        
+       
         TabView {
             DailyQuoteView()
-                    .tabItem {
+                .tabItem {
                     Label("Daily quote", systemImage: "newspaper")
                 }
             GratitudeJournalView()
@@ -23,7 +25,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Kindness", systemImage: "questionmark.diamond")
                 }
-            MoodTracker()
+            MoodTracker().environmentObject(ratings)
                 .tabItem {
                     Label("Mood", systemImage: "bolt")
                 }
