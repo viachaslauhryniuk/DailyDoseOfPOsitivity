@@ -10,6 +10,7 @@ struct Act: Codable, Identifiable{
     let id: UUID
     let name: String
     let symbol: String
+    var isPinned:Bool
 }
 class Acts: ObservableObject{
     @Published var acts = [Act]()

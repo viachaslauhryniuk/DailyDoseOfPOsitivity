@@ -23,7 +23,7 @@ struct ContentView: View {
                 }
             RandomActsGenerator()
                 .tabItem {
-                    Label("Kindness", systemImage: "questionmark.diamond")
+                    Label("Kindness", systemImage: "heart.fill")
                 }
             MoodTracker().environmentObject(ratings)
                 .tabItem {

@@ -2,11 +2,61 @@
     {
         "id": "fb4216db-cc52-470b-8726-9018e19b93d9",
         "name": "Leave money on a vending machine for someone",
-        "symbol": "dollarsign.circle.fill"
+        "symbol": "dollarsign.circle.fill",
+        "isPinned": false
     },
     {
         "id": "32446d61-7b3f-4464-954d-bc9d6552267d",
         "name": "Bake cookies for the elderly",
-        "symbol": "cooktop.fill"
+        "symbol": "cooktop.fill",
+        "isPinned": false
+    },
+    {
+        "id": "3f0155a3-7a6e-4f03-aae1-9f3b56e9cf23",
+        "name": "Write thank-you notes for essential workers",
+        "symbol": "note.text.badge.plus",
+        "isPinned": false
+    },
+    {
+        "id": "e45a65a9-67e2-4b8f-a5b9-3f8c2f5e4a92",
+        "name": "Donate toys to a children's hospital",
+        "symbol": "gift.fill",
+        "isPinned": false
+    },
+    {
+        "id": "821c6626-67b2-4f90-9e89-b9f1b8c80116",
+        "name": "Volunteer at a local soup kitchen",
+        "symbol": "person.3.fill",
+        "isPinned": false
+    },
+    {
+        "id": "c8e7896a-64c6-4ef2-8a06-b5c5e10140d3",
+        "name": "Plant trees in your community",
+        "symbol": "leaf.fill",
+        "isPinned": false
+    },
+    {
+        "id": "adba4b0e-7a82-4185-bc7b-d8ef5d60aaf3",
+        "name": "Create care packages for the homeless",
+        "symbol": "bag.fill.badge.plus",
+        "isPinned": false
+    },
+    {
+        "id": "6e0fe7e1-4478-4854-8db1-d10b502c9f98",
+        "name": "Offer to walk a neighbor's dog",
+        "symbol": "figure.walk",
+        "isPinned": false
+    },
+    {
+        "id": "a3f034ff-460d-4e84-9b21-c23529972288",
+        "name": "Organize a neighborhood cleanup",
+        "symbol": "trash.circle.fill",
+        "isPinned": false
+    },
+    {
+        "id": "76e3a37f-0db1-40f8-9a2c-1a0e95b0023a",
+        "name": "Send care packages to soldiers overseas",
+        "symbol": "shippingbox.fill",
+        "isPinned": false
     }
 ]
