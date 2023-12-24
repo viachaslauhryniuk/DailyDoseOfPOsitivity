@@ -6,8 +6,27 @@
 //
 
 import Foundation
+enum UserMood: String,Encodable,Decodable {
+    case glowing = "🥳 Glowing"
+    case happy = "🙂 Happy"
+    case neutral = "😐 Neutral"
+    case sad = "😕 Sad"
+    case verysad = "😡 Very sad"
+    
+    
+    var score: Int {
+        switch self {
+            case .glowing: return 5
+            case .happy: return 4
+            case .neutral: return 3
+            case .sad: return 2
+            case .verysad: return 1
+
+        }
+    }
+}
 class Ratings: ObservableObject{
-    @Published var ratings = [Int](){
+    @Published var ratings = [UserMood](){
         didSet{
             let encoder = JSONEncoder()
             if let encoded = try? encoder.encode(ratings){
@@ -17,7 +36,7 @@ class Ratings: ObservableObject{
     }
     init() {
         if let savedItems = UserDefaults.standard.data(forKey: "Ratingss") {
-            if let decodedItems = try? JSONDecoder().decode([Int].self, from: savedItems) {
+            if let decodedItems = try? JSONDecoder().decode([UserMood].self, from: savedItems) {
                 ratings = decodedItems
                 return
             }

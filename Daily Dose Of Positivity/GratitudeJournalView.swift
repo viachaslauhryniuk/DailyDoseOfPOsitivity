@@ -30,7 +30,7 @@ struct GratitudeJournalView: View {
             } else {
                 Spacer()
                 // Display Text if editText is false
-                Text(savedText)
+                Text(savedText.isEmpty ? "Add something" : savedText)
                     .padding()
                     .background(.ultraThinMaterial)
                     .font(.body)

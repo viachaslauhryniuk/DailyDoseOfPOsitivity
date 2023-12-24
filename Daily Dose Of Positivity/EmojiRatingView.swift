@@ -16,7 +16,7 @@ struct EmojiRatingView: View {
             HStack{
                 
                 Button {
-                    ratings.ratings.append(1)
+                    ratings.ratings.append(.verysad)
                     dismiss()
                     
                 } label: {
@@ -25,7 +25,7 @@ struct EmojiRatingView: View {
                         .scaleEffect(2)
                 }
                 Button {
-                    ratings.ratings.append(2)
+                    ratings.ratings.append(.sad)
                     dismiss()
                     
                 } label: {
@@ -34,7 +34,7 @@ struct EmojiRatingView: View {
                         .scaleEffect(2)
                 }
                 Button {
-                    ratings.ratings.append(3)
+                    ratings.ratings.append(.neutral)
                     dismiss()
                     
                 } label: {
@@ -43,7 +43,7 @@ struct EmojiRatingView: View {
                         .scaleEffect(2)
                 }
                 Button{
-                    ratings.ratings.append(4)
+                    ratings.ratings.append(.happy)
                     dismiss()
                     
                 } label: {
@@ -52,7 +52,7 @@ struct EmojiRatingView: View {
                         .scaleEffect(2)
                 }
                 Button {
-                    ratings.ratings.append(5)
+                    ratings.ratings.append(.glowing)
                     dismiss()
                     
                 } label: {
