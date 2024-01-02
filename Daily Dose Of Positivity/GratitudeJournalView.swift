@@ -8,18 +8,15 @@
 import SwiftUI
 
 struct GratitudeJournalView: View {
-    @AppStorage("Text") var savedText = ""
-    @State var editText = false
-    @State var editedText = ""
+    @EnvironmentObject var vm : UsersViewModel
     @FocusState var isFocused: Bool
-
     var body: some View {
         VStack {
-            if editText {
+            if vm.editText {
                Spacer()
                 Form {
                     Section(header: Text("Write down what you're grateful for today").lineLimit(1)) {
-                        TextEditor(text: $editedText)
+                        TextEditor(text: $vm.editedText)
                             .background(Color.gray.opacity(0.10))
                             .cornerRadius(20)
                             .focused($isFocused)
@@ -30,7 +27,7 @@ struct GratitudeJournalView: View {
             } else {
                 Spacer()
                 // Display Text if editText is false
-                Text(savedText.isEmpty ? "Add something" : savedText)
+                Text(vm.savedText.isEmpty ? "Add something" : vm.savedText)
                     .padding()
                     .background(.ultraThinMaterial)
                     .font(.body)
@@ -40,14 +37,14 @@ struct GratitudeJournalView: View {
             }
             Spacer()
             Button {
-                if editText {
+                if vm.editText {
                     // Save edited text and hide TextEditor
-                    savedText = editedText
+                    vm.savedText = vm.editedText
                 }
-                editText.toggle()
-                isFocused = editText // Focus on TextEditor if editText is true
+                vm.editText.toggle()
+                isFocused = vm.editText // Focus on TextEditor if editText is true
             } label: {
-                Label(editText ? "Save" : "Edit", systemImage: editText ? "square.and.arrow.down" : "pencil")
+                Label(vm.editText ? "Save" : "Edit", systemImage: vm.editText ? "square.and.arrow.down" : "pencil")
             }
             .buttonStyle(.borderedProminent)
             .buttonBorderShape(.capsule)
@@ -56,27 +53,9 @@ struct GratitudeJournalView: View {
         
         }
         .onAppear {
-            checkDailyAccess()
-            editText = false
-            editedText = savedText
-        }
-    }
-
-    func checkDailyAccess() {
-        
-        let lastAccessDate = UserDefaults.standard.object(forKey: "LastAccessDate") as? Date
-        
-        if let lastAccessDate = lastAccessDate {
-            if !Calendar.current.isDateInToday(lastAccessDate) {
-                 savedText = ""
-                UserDefaults.standard.set(Date(), forKey: "LastAccessDate")
-                
-            }
-        } else {
-                savedText = ""
-            
-            UserDefaults.standard.set(Date(), forKey: "LastAccessDate")
-            
+            vm.checkDailyAccessForGratitude()
+            vm.editText = false
+            vm.editedText = vm.savedText
         }
     }
     }

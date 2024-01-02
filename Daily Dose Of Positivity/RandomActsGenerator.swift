@@ -6,10 +6,10 @@
 //
 import SwiftUI
 struct RandomActsGenerator: View {
-    @StateObject var acts = Acts()
+    @EnvironmentObject var vm : UsersViewModel
     var body: some View {
         NavigationStack{
-            ForEach($acts.acts.filter({ $act in act.isPinned == true })) { $act in
+            ForEach($vm.acts.filter({ $act in act.isPinned == true })) { $act in
                 Label(act.name, systemImage: "pin.slash.fill")
                     .padding()
                     .onTapGesture {
@@ -20,7 +20,7 @@ struct RandomActsGenerator: View {
             Divider()
             Section{
                 List{
-                    ForEach($acts.acts.shuffled().filter({ $act in act.isPinned == false }), id: \.id){ $act in
+                    ForEach($vm.acts.shuffled().filter({ $act in act.isPinned == false }), id: \.id){ $act in
                         Label(act.name, systemImage: act.symbol)
                             .swipeActions(edge: .leading) {
                                 Button {
@@ -53,11 +53,7 @@ struct RandomActsGenerator: View {
             .navigationTitle("Random acts of kindness")
             .navigationBarTitleDisplayMode(.inline)
             .scrollContentBackground(.hidden)
-            }
-        
-            
-           
-            
+            }     
         }
     }
 

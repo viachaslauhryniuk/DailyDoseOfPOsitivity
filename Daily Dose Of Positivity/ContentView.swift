@@ -8,28 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var ratings = Ratings()
+    @ObservedObject var vm = UsersViewModel()
     
     var body: some View {
        
         TabView {
-            DailyQuoteView()
+            DailyQuoteView().environmentObject(vm)
                 .tabItem {
                     Label("Daily quote", systemImage: "newspaper")
                 }
-            GratitudeJournalView()
+            GratitudeJournalView().environmentObject(vm)
                 .tabItem {
                     Label("Gratitude", systemImage: "pencil")
                 }
-            RandomActsGenerator()
+            RandomActsGenerator().environmentObject(vm)
                 .tabItem {
                     Label("Kindness", systemImage: "heart.fill")
                 }
-            MoodTracker().environmentObject(ratings)
+            MoodTracker().environmentObject(vm)
                 .tabItem {
                     Label("Mood", systemImage: "bolt")
                 }
-            MyProfileView()
+            MyProfileView().environmentObject(vm)
                 .tabItem {
                     Label("My profile", systemImage: "person.crop.circle")
                 }

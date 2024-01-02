@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct DailyQuoteView: View {
-    @ObservedObject private var quotes = Quotes()
+    @EnvironmentObject var vm : UsersViewModel
     var body: some View {
         VStack{
-                Text(quotes.quotes.randomElement()?.phrase ?? "nil")
+                Text(vm.quotes.randomElement()?.phrase ?? "nil")
                     .padding()
                     .background(.ultraThinMaterial)
                     .font(.title)

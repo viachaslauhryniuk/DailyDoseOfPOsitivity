@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct EmojiRatingView: View {
-    @EnvironmentObject var ratings: Ratings
-    @Environment (\.dismiss) var dismiss
+    @EnvironmentObject var vm : UsersViewModel
     var body: some View {
         VStack{
             Text("How do you feel today?")
             HStack{
                 
                 Button {
-                    ratings.ratings.append(.verysad)
-                    dismiss()
+                    vm.ratings.append(.verysad)
+                    vm.dismiss()
                     
                 } label: {
                     Text("😡")
@@ -25,8 +24,8 @@ struct EmojiRatingView: View {
                         .scaleEffect(2)
                 }
                 Button {
-                    ratings.ratings.append(.sad)
-                    dismiss()
+                    vm.ratings.append(.sad)
+                    vm.dismiss()
                     
                 } label: {
                     Text("😕")
@@ -34,8 +33,10 @@ struct EmojiRatingView: View {
                         .scaleEffect(2)
                 }
                 Button {
-                    ratings.ratings.append(.neutral)
-                    dismiss()
+                    vm.ratings.append(.neutral)
+
+
+                    vm.dismiss()
                     
                 } label: {
                     Text("😐")
@@ -43,8 +44,9 @@ struct EmojiRatingView: View {
                         .scaleEffect(2)
                 }
                 Button{
-                    ratings.ratings.append(.happy)
-                    dismiss()
+                    vm.ratings.append(.happy)
+
+                    vm.dismiss()
                     
                 } label: {
                     Text("🙂")
@@ -52,8 +54,10 @@ struct EmojiRatingView: View {
                         .scaleEffect(2)
                 }
                 Button {
-                    ratings.ratings.append(.glowing)
-                    dismiss()
+                    vm.ratings.append(.glowing)
+             
+
+                    vm.dismiss()
                     
                 } label: {
                     Text("🥳")
