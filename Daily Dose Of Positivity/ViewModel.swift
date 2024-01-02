@@ -13,7 +13,7 @@ final class UsersViewModel: ObservableObject{
         didSet{
             let encoder = JSONEncoder()
             if let encoded = try? encoder.encode(ratings){
-                UserDefaults.standard.set(encoded, forKey: "Rating")
+                UserDefaults.standard.set(encoded, forKey: "MoodHistory")
             }
      
         }
@@ -22,13 +22,13 @@ final class UsersViewModel: ObservableObject{
     @AppStorage("Text") var savedText = ""
     @Published var editText = false
     @Published var editedText = ""
-    @Environment (\.dismiss) var dismiss
+   
    
     
     
     
     init() {
-        if let savedItems = UserDefaults.standard.data(forKey: "MoodRatings"),
+        if let savedItems = UserDefaults.standard.data(forKey: "MoodHistory"),
            let decodedItems = try? JSONDecoder().decode([UserMood].self, from: savedItems) {
             self.ratings = decodedItems
         } else {

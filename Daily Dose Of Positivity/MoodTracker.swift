@@ -21,7 +21,7 @@ struct MoodTracker: View {
                     
                     ScrollView {
                         VStack(spacing: 10) {
-                            ForEach(vm.ratings, id: \.self) { mood in
+                            ForEach(vm.ratings.reversed(), id: \.self) { mood in
                                 Text(mood.rawValue)
                                     .padding()
                             }

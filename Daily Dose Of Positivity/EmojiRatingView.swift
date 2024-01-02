@@ -9,6 +9,7 @@ import SwiftUI
 
 struct EmojiRatingView: View {
     @EnvironmentObject var vm : UsersViewModel
+    @Environment (\.dismiss) var dismiss
     var body: some View {
         VStack{
             Text("How do you feel today?")
@@ -16,7 +17,7 @@ struct EmojiRatingView: View {
                 
                 Button {
                     vm.ratings.append(.verysad)
-                    vm.dismiss()
+                    dismiss()
                     
                 } label: {
                     Text("😡")
@@ -25,8 +26,7 @@ struct EmojiRatingView: View {
                 }
                 Button {
                     vm.ratings.append(.sad)
-                    vm.dismiss()
-                    
+                    dismiss()
                 } label: {
                     Text("😕")
                         .padding()
@@ -34,9 +34,7 @@ struct EmojiRatingView: View {
                 }
                 Button {
                     vm.ratings.append(.neutral)
-
-
-                    vm.dismiss()
+                    dismiss()
                     
                 } label: {
                     Text("😐")
@@ -45,8 +43,7 @@ struct EmojiRatingView: View {
                 }
                 Button{
                     vm.ratings.append(.happy)
-
-                    vm.dismiss()
+                    dismiss()
                     
                 } label: {
                     Text("🙂")
@@ -55,9 +52,7 @@ struct EmojiRatingView: View {
                 }
                 Button {
                     vm.ratings.append(.glowing)
-             
-
-                    vm.dismiss()
+                    dismiss()
                     
                 } label: {
                     Text("🥳")
