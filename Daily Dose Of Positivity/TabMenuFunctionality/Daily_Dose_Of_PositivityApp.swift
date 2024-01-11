@@ -11,7 +11,7 @@ import SwiftUI
 struct Daily_Dose_Of_Positivity: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           WelcomeView()
         }
     }
 }

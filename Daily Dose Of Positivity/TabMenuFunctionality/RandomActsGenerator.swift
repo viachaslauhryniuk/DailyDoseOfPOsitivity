@@ -18,7 +18,7 @@ struct RandomActsGenerator: View {
                     .lineLimit(1)
             }
             Divider()
-            Section{
+            HStack{
                 List{
                     ForEach($vm.acts.shuffled().filter({ $act in act.isPinned == false }), id: \.id){ $act in
                         Label(act.name, systemImage: act.symbol)
@@ -53,7 +53,7 @@ struct RandomActsGenerator: View {
             .navigationTitle("Random acts of kindness")
             .navigationBarTitleDisplayMode(.inline)
             .scrollContentBackground(.hidden)
-            }     
+            }
         }
     }
 

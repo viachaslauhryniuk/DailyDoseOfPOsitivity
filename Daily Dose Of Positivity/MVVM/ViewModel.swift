@@ -15,15 +15,31 @@ final class UsersViewModel: ObservableObject{
             if let encoded = try? encoder.encode(ratings){
                 UserDefaults.standard.set(encoded, forKey: "MoodHistory")
             }
-     
+            
         }
     }
+    @Published var users = [User](){
+        didSet{
+            let encoder = JSONEncoder()
+            if let encoded = try? encoder.encode(users){
+                UserDefaults.standard.set(encoded, forKey: "Users")
+            }
+            
+        }
+    }
+    @Published var isRegistered = true
+    @Published var showLogRegView = false
+    @Published var nextView: ViewStack = .login
+    @Published var isLoading = false
+    @Published var isLoggedIn = false
+    @Published var userName = ""
+    @Published var password = ""
     @Published var askDailyMood = false //special block for emojiratingview
     @AppStorage("Text") var savedText = ""
     @Published var editText = false
     @Published var editedText = ""
-   
-   
+    
+    
     
     
     
@@ -34,6 +50,12 @@ final class UsersViewModel: ObservableObject{
         } else {
             self.ratings = []
         } //decoding users moods
+        if let savedItems = UserDefaults.standard.data(forKey: "Users"),
+           let decodedItems = try? JSONDecoder().decode([User].self, from: savedItems) {
+            self.users = decodedItems
+        } else {
+            self.users = []
+        }
         if let quotesData = loadDataFromJSONFile(named: "Data", as: [Quote].self),
            let actsData = loadDataFromJSONFile(named: "Acts", as: [Act].self) {
             self.quotes = quotesData
@@ -63,7 +85,7 @@ final class UsersViewModel: ObservableObject{
         }
     }
     
-  
+    
     
     func calculateAverageScore() -> Double {
         let totalScore = self.ratings.reduce(0) { $0 + $1.score }
@@ -94,15 +116,30 @@ final class UsersViewModel: ObservableObject{
         
         if let lastAccessDate = lastAccessDate {
             if !Calendar.current.isDateInToday(lastAccessDate) {
-                 savedText = ""
+                savedText = ""
                 UserDefaults.standard.set(Date(), forKey: "LastAccessDate")
                 
             }
         } else {
-                savedText = ""
+            savedText = ""
             
             UserDefaults.standard.set(Date(), forKey: "LastAccessDate")
             
+        }
+    }
+    func register(){
+        let newUser = User(username: self.userName, password: self.password)
+        self.users.append(newUser)
+        self.isRegistered = true
+        print(users)
+    }
+    func login(){
+        if users.first(where: { $0.username == userName && $0.password == password }) != nil {
+            isLoggedIn = true
+           
+        }
+        else{
+            print(users)
         }
     }
 }

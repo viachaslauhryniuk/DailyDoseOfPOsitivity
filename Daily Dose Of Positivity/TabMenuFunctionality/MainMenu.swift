@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainMenu: View {
     @ObservedObject var vm = UsersViewModel()
     
     var body: some View {
@@ -34,7 +34,7 @@ struct ContentView: View {
                     Label("My profile", systemImage: "person.crop.circle")
                 }
         }
-        .padding(.horizontal)
+        
         .onAppear() {
                       let standardAppearance = UITabBarAppearance()
                       standardAppearance.backgroundColor = UIColor(Color.gray)
@@ -45,6 +45,8 @@ struct ContentView: View {
                       standardAppearance.stackedLayoutAppearance = itemAppearance
                       standardAppearance.compactInlineLayoutAppearance = itemAppearance
                       UITabBar.appearance().standardAppearance = standardAppearance
+                    UITabBar.appearance().scrollEdgeAppearance = UITabBarAppearance.init(idiom:.unspecified)
+            
                   }
         .accentColor(Color.red)
     }
@@ -52,6 +54,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainMenu()
     }
 }

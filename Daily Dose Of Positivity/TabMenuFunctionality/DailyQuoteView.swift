@@ -18,6 +18,7 @@ struct DailyQuoteView: View {
                     .fontWeight(.heavy)
                     .cornerRadius(25)
                     .foregroundColor(Color.gray)
+                    .padding(.horizontal)
             }
         }
     }

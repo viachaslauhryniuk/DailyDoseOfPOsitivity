@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		560435FB2B4D86DB00996B27 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 560435FA2B4D86DB00996B27 /* SwiftUICharts */; };
 		563BD9A42B40D7A400D01A9D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563BD9A32B40D7A400D01A9D /* Model.swift */; };
 		563BD9A62B40D85400D01A9D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563BD9A52B40D85400D01A9D /* ViewModel.swift */; };
+		563BD9AC2B46D51F00D01A9D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563BD9AB2B46D51F00D01A9D /* LoginView.swift */; };
+		563BD9AE2B46D9B300D01A9D /* RegistrerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563BD9AD2B46D9B300D01A9D /* RegistrerView.swift */; };
+		5652A97D2B4FFB9700A1A294 /* Pow in Frameworks */ = {isa = PBXBuildFile; productRef = 5652A97C2B4FFB9700A1A294 /* Pow */; };
 		5694343D2B0161000074E16A /* Daily_Dose_Of_PositivityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694343C2B0161000074E16A /* Daily_Dose_Of_PositivityApp.swift */; };
-		5694343F2B0161000074E16A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694343E2B0161000074E16A /* ContentView.swift */; };
+		5694343F2B0161000074E16A /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694343E2B0161000074E16A /* MainMenu.swift */; };
 		569434412B0161030074E16A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 569434402B0161030074E16A /* Assets.xcassets */; };
 		569434442B0161030074E16A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 569434432B0161030074E16A /* Preview Assets.xcassets */; };
 		5694344B2B0169080074E16A /* DailyQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694344A2B0169080074E16A /* DailyQuoteView.swift */; };
@@ -21,14 +25,17 @@
 		569434592B017DF30074E16A /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 569434582B017DF30074E16A /* Data.json */; };
 		5694345D2B03939F0074E16A /* Acts.json in Resources */ = {isa = PBXBuildFile; fileRef = 5694345C2B03939F0074E16A /* Acts.json */; };
 		5694345F2B03EB310074E16A /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5694345E2B03EB310074E16A /* EmojiRatingView.swift */; };
+		56DDC0592B4DB9CC003F9DD0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DDC0582B4DB9CC003F9DD0 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		563BD9A32B40D7A400D01A9D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		563BD9A52B40D85400D01A9D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		563BD9AB2B46D51F00D01A9D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		563BD9AD2B46D9B300D01A9D /* RegistrerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrerView.swift; sourceTree = "<group>"; };
 		569434392B0161000074E16A /* Daily Dose Of Positivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Dose Of Positivity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5694343C2B0161000074E16A /* Daily_Dose_Of_PositivityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Dose_Of_PositivityApp.swift; sourceTree = "<group>"; };
-		5694343E2B0161000074E16A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5694343E2B0161000074E16A /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		569434402B0161030074E16A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		569434432B0161030074E16A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5694344A2B0169080074E16A /* DailyQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyQuoteView.swift; sourceTree = "<group>"; };
@@ -39,6 +46,7 @@
 		569434582B017DF30074E16A /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 		5694345C2B03939F0074E16A /* Acts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Acts.json; sourceTree = "<group>"; };
 		5694345E2B03EB310074E16A /* EmojiRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
+		56DDC0582B4DB9CC003F9DD0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				560435FB2B4D86DB00996B27 /* SwiftUICharts in Frameworks */,
+				5652A97D2B4FFB9700A1A294 /* Pow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,18 +81,10 @@
 		5694343B2B0161000074E16A /* Daily Dose Of Positivity */ = {
 			isa = PBXGroup;
 			children = (
-				5694343C2B0161000074E16A /* Daily_Dose_Of_PositivityApp.swift */,
-				563BD9A32B40D7A400D01A9D /* Model.swift */,
-				563BD9A52B40D85400D01A9D /* ViewModel.swift */,
-				5694343E2B0161000074E16A /* ContentView.swift */,
-				5694344A2B0169080074E16A /* DailyQuoteView.swift */,
-				5694344C2B0169440074E16A /* GratitudeJournalView.swift */,
-				5694344E2B016A170074E16A /* RandomActsGenerator.swift */,
-				569434502B016ABD0074E16A /* MoodTracker.swift */,
-				5694345E2B03EB310074E16A /* EmojiRatingView.swift */,
-				569434522B016AE00074E16A /* MyProfileView.swift */,
-				569434582B017DF30074E16A /* Data.json */,
-				5694345C2B03939F0074E16A /* Acts.json */,
+				56DDC0572B4D8F9F003F9DD0 /* TabMenuFunctionality */,
+				56DDC0562B4D8F79003F9DD0 /* Data */,
+				56DDC0552B4D8F39003F9DD0 /* MVVM */,
+				56DDC0542B4D8F25003F9DD0 /* Login */,
 				569434402B0161030074E16A /* Assets.xcassets */,
 				569434422B0161030074E16A /* Preview Content */,
 			);
@@ -95,6 +97,49 @@
 				569434432B0161030074E16A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		56DDC0542B4D8F25003F9DD0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				563BD9AB2B46D51F00D01A9D /* LoginView.swift */,
+				563BD9AD2B46D9B300D01A9D /* RegistrerView.swift */,
+				56DDC0582B4DB9CC003F9DD0 /* WelcomeView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		56DDC0552B4D8F39003F9DD0 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				563BD9A32B40D7A400D01A9D /* Model.swift */,
+				563BD9A52B40D85400D01A9D /* ViewModel.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		56DDC0562B4D8F79003F9DD0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				569434582B017DF30074E16A /* Data.json */,
+				5694345C2B03939F0074E16A /* Acts.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		56DDC0572B4D8F9F003F9DD0 /* TabMenuFunctionality */ = {
+			isa = PBXGroup;
+			children = (
+				5694343C2B0161000074E16A /* Daily_Dose_Of_PositivityApp.swift */,
+				5694343E2B0161000074E16A /* MainMenu.swift */,
+				5694344A2B0169080074E16A /* DailyQuoteView.swift */,
+				5694344C2B0169440074E16A /* GratitudeJournalView.swift */,
+				5694344E2B016A170074E16A /* RandomActsGenerator.swift */,
+				569434502B016ABD0074E16A /* MoodTracker.swift */,
+				5694345E2B03EB310074E16A /* EmojiRatingView.swift */,
+				569434522B016AE00074E16A /* MyProfileView.swift */,
+			);
+			path = TabMenuFunctionality;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +158,10 @@
 			dependencies = (
 			);
 			name = "Daily Dose Of Positivity";
+			packageProductDependencies = (
+				560435FA2B4D86DB00996B27 /* SwiftUICharts */,
+				5652A97C2B4FFB9700A1A294 /* Pow */,
+			);
 			productName = "Grocery Price Tracker";
 			productReference = 569434392B0161000074E16A /* Daily Dose Of Positivity.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +190,10 @@
 				Base,
 			);
 			mainGroup = 569434302B0161000074E16A;
+			packageReferences = (
+				560435F92B4D86DB00996B27 /* XCRemoteSwiftPackageReference "ChartView" */,
+				5652A97B2B4FFB9700A1A294 /* XCRemoteSwiftPackageReference "Pow" */,
+			);
 			productRefGroup = 5694343A2B0161000074E16A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -173,9 +226,12 @@
 				5694344D2B0169440074E16A /* GratitudeJournalView.swift in Sources */,
 				563BD9A42B40D7A400D01A9D /* Model.swift in Sources */,
 				569434512B016ABD0074E16A /* MoodTracker.swift in Sources */,
-				5694343F2B0161000074E16A /* ContentView.swift in Sources */,
+				5694343F2B0161000074E16A /* MainMenu.swift in Sources */,
 				563BD9A62B40D85400D01A9D /* ViewModel.swift in Sources */,
+				563BD9AC2B46D51F00D01A9D /* LoginView.swift in Sources */,
+				56DDC0592B4DB9CC003F9DD0 /* WelcomeView.swift in Sources */,
 				5694344B2B0169080074E16A /* DailyQuoteView.swift in Sources */,
+				563BD9AE2B46D9B300D01A9D /* RegistrerView.swift in Sources */,
 				569434532B016AE00074E16A /* MyProfileView.swift in Sources */,
 				5694343D2B0161000074E16A /* Daily_Dose_Of_PositivityApp.swift in Sources */,
 				5694344F2B016A170074E16A /* RandomActsGenerator.swift in Sources */,
@@ -304,6 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Daily Dose Of Positivity/Preview Content\"";
@@ -333,6 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Daily Dose Of Positivity/Preview Content\"";
@@ -379,6 +437,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		560435F92B4D86DB00996B27 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+		5652A97B2B4FFB9700A1A294 /* XCRemoteSwiftPackageReference "Pow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EmergeTools/Pow";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		560435FA2B4D86DB00996B27 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 560435F92B4D86DB00996B27 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+		5652A97C2B4FFB9700A1A294 /* Pow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5652A97B2B4FFB9700A1A294 /* XCRemoteSwiftPackageReference "Pow" */;
+			productName = Pow;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 569434312B0161000074E16A /* Project object */;
 }
