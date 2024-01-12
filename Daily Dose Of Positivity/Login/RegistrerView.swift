@@ -18,7 +18,7 @@ struct RegistrerView: View {
                     .font(.system(size: 30, weight: .bold))
                     .padding(.bottom,25)
                 Group{
-                    TextField("First name", text: $vm.userName)
+                    TextField("First name", text: $vm.userFName)
                     TextField("Username", text: $vm.userName)
                     SecureField("Password", text: $vm.password)
                 }

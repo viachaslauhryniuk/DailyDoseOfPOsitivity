@@ -32,9 +32,10 @@ final class UsersViewModel: ObservableObject{
     @Published var nextView: ViewStack = .login
     @Published var isLoading = false
     @Published var isLoggedIn = false
+    @Published var userFName = ""
     @Published var userName = ""
     @Published var password = ""
-    @Published var askDailyMood = false //special block for emojiratingview
+    @Published var askDailyMood = true //special block for emojiratingview
     @AppStorage("Text") var savedText = ""
     @Published var editText = false
     @Published var editedText = ""
