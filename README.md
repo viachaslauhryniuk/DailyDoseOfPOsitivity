@@ -1,9 +1,9 @@
 # DailyDoseOfPOsitivity
 This iOS app aims to promote a positive mindset and create a supportive community around the idea of spreading joy and kindness. It's a simple concept with the potential to make a positive impact on users' daily lives.
-![Simulator Screenshot - iPhone 14 Pro - 2023-11-14 at 13 58 40](https://github.com/viachaslauhryniuk/DailyDoseOfPOsitivity/assets/43450673/2785073b-79ff-4c47-b222-e82a46476cfb)
+## Demo
+![Feature 1](![Simulator Screen Recording - iPhone 15 - 2024-01-12 at 16 47 13](https://github.com/viachaslauhryniuk/DailyDoseOfPOsitivity/assets/43450673/d4e8a28d-2179-4611-865e-af8244e1ef8a)
+)
+*Login and registration.*
 
-![Simulator Screenshot - iPhone 14 Pro - 2023-11-26 at 21 57 16](https://github.com/viachaslauhryniuk/DailyDoseOfPOsitivity/assets/43450673/4cc6cf48-d1ca-4b4c-aed0-3c2bddb039b7)
-
-![Simulator Screenshot - iPhone 14 Pro - 2023-11-26 at 21 56 56](https://github.com/viachaslauhryniuk/DailyDoseOfPOsitivity/assets/43450673/659a7ddf-948b-4e0f-8795-903636b70f4f)
-
-![Simulator Screenshot - iPhone 14 Pro - 2023-11-26 at 21 56 43](https://github.com/viachaslauhryniuk/DailyDoseOfPOsitivity/assets/43450673/8c34300f-b24d-45f3-bfc7-f4b46e320f41)
+![Feature 2](![Simulator Screen Recording - iPhone 15 - 2024-01-12 at 16 59 44](https://github.com/viachaslauhryniuk/DailyDoseOfPOsitivity/assets/43450673/9e1bc353-a40a-45ae-a33d-8f03b535fa66))
+*Main Functionality.*
