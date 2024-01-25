@@ -11,12 +11,6 @@
 - **Uplifting messages:** Messages that uplift your spirit and brighten your day.
 - **User-friendly interface:** Easy to navigate and use.
 
-## Installation 🛠️
-1. Clone the repository: `git clone https://github.com/viachaslauhryniuk/DailyDoseOfPositivity.git`
-2. Navigate to the project directory: `cd DailyDoseOfPositivity`
-3. Install the required dependencies: `npm install`
-4. Start the application: `npm start`
-
 ## Usage 📖
 
 ![Simulator Screen Recording - iPhone 15 - 2024-01-12 at 16 47 13](https://github.com/viachaslauhryniuk/DailyDoseOfPOsitivity/assets/43450673/d4e8a28d-2179-4611-865e-af8244e1ef8a)
